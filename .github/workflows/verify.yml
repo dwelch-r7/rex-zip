@@ -1,0 +1,10 @@
+name: Verify
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    uses: rapid7/metasploit-framework/.github/workflows/shared_gem_verify.yml@master
